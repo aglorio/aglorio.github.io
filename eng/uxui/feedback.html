@@ -1,0 +1,129 @@
+<html>
+<head>
+<!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../../style/style.css">
+  <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
+  <title>Alessandra Glorio - Feedback automático</title>
+<!---test color--->
+</head>
+<body>
+<!---navigation bar--->
+<div class="top-bar container-fluid"></div>
+<nav class="nav-bar">
+  <ul class="row justify-content-between align-items-right">
+    <li class="nav_link col-lg-3 col-sm-12">
+      <a class="nav_logo" href="../../index.html">Alessandra Glorio Valdivia</a>
+    </li>
+    <ul class="col-lg-6 col-sm-12 justify-content-end" style="display:inline-flex;">
+          <li class="nav_link active_link">
+            <a href="../ux-ui.html">UX/UI</a>
+          </li>
+          <li class="nav_link">
+            <a href="../producto.html">Producto</a>
+          </li>
+          <li class="nav_link">
+            <a href="../visual.html">Visual</a>
+          </li>
+          <li class="nav_link">
+            <a href="../ops.html">Operaciones</a>
+          </li>
+          <li class="nav_link">
+            <a href="../ilustracion.html">Ilustración</a>
+          </li>
+          <li class="nav_link">
+            <a href="../otros.html">Otros</a>
+          </li>
+    </ul>
+    <ul class="col-lg-1 col-sm-1" style"display:flex;">
+      <li class="nav_link active_link">
+        <a href="#">ESP</a>
+      </li>
+      <li class="nav_link">
+        <a href="../eng/uxui/feedback.html">ENG</a>
+      </li>
+    </ul>
+  </ul>
+</nav>
+
+<!---content--->
+
+<section class="container-fluid pl-4">
+  <div class="row">
+    <div class="col-md-8">
+      <h1>Feedback automático</h1>
+      <p>En UTP, recibí el encargo de crear las interfaces y el flujo de una herramienta diseñada por el equipo de Tecnología para facilitar la corrección de tareas de los docentes de los cursos virtuales. Inicialmente, la página se creó para distribuir con docentes del curso de Inglés, pero debía ser escalable a 100+ cursos eventualmente. La página era temporal - eventualmente las interfaces se transferirían dentro del LMS propio de UTP - UTP+Class.</p>
+      <p>El pedido inicial tenía las siguientes metas:</p>
+      <ul class="pl-4">
+        <li>Ofrecer un flujo fácil de usar para los docentes (40+ años de edad, sin mucho conocimiento de herramientas web)</li>
+        <li>Permitir generar feedback para múltiples archivos.</li>
+        <li>Permitir visualizar, copiar y descargar el feedback individual para cada archivo inmediatamente.</li>
+        <li>Permitir visualizar, copiar y descargar el feedback generado previamente - individual y masivamente.</li>
+        <li>Diseñar las pantallas de forma que sean eventualmente integrables dentro de UTP+Class.</li>
+      </ul>
+      <figure>
+        <img src="../../img/fb/001.png" alt="" width="100%" height="auto">
+        <img src="../../img/fb/002.png" alt="" width="100%" height="auto">
+        <figcaption>Figuras 1 y 2: Los bocetos que recibí de mi equipo.</figcaption>
+      </figure>
+      <p>Mi equipo ya tenía un esquema de flujo designado para la herramienta (Figuras 1 y 2) – mi trabajo consistió en traducirlo a interfaces claras.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid pl-4">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>La Herramienta</h2>
+      <p>La herramienta permite a los docentes universitarios generar feedback escrito para las tareas calificadas de los estudiantes. Esta usa ChatGPT para revisar y crear un texto con feedback para corregir los errores que los estudiantes cometen en el mismo. Solo es aplicable a tareas textuales - y requiere un input en formato .DOCX o .PDF.</p>
+      <p>Una vez que el programa genera feedback, el docente puede copiarlo al portapapeles y pegarlo en la interfaz de revisión de tareas del LMS (que permite agregar comentarios al poner una nota), o descargarlo y enviarlo al estudiante. La herramienta no puede calificar ni poner notas, ni – por el momento – copiar el feedback automáticamente. El docente siempre debe revisar y copiar el texto individualmente para poder entregarlo al alumno.</p>
+    </div>
+  </div>
+</section>
+<section class="long_container" style="background:var(--light-color);">
+  <div class="row m-0 justify-content-center" style="margin:0;">
+    <div class="col-md-10">
+      <figure>
+        <video style="width:100%;height:auto;margin-bottom:16px;" src="../../img/fb/004.mp4" autoplay poster="posterimage.jpg" controls>
+        </video>
+        <figcaption>Figura 3: Uso de la plataforma para obtener feedback para una tarea.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="container-fluid pl-4">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Las interfaces</h2>
+      <p>Recibí algunos bocetos de cómo querían que la interfaz se integre dentro del LMS, pero al ser una prueba abierta y fuera del LMS, rediseñé las pantallas para dejar claro que serán diseñadas como un web app - pero las mantuve lo suficientemente simples para poder integrar los componentes principales dentro del LMS. Obviamente, me adapté (en lo posible) al sistema de diseño de +Class.</p>
+    </div>
+  </div>
+</section>
+<section class="long_container" style="background:var(--light-color);">
+  <div class="row m-0 justify-content-center" style="margin:0;">
+    <div class="col-md-10">
+      <figure>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);margin-bottom:16px;" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLnoUce2GIpWhCSPQGUqW6z%2FAI_Feedback_Mock_Ups_v2%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D2214-422%26viewport%3D146%252C813%252C0.22%26t%3D2v9vOyFyTF3V4fNu-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D2214%253A537%26mode%3Ddesign" allowfullscreen></iframe>
+        <figcaption>Figura 4: Archivo de <a href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLnoUce2GIpWhCSPQGUqW6z%2FAI_Feedback_Mock_Ups_v2%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D2214-422%26viewport%3D146%252C813%252C0.22%26t%3D2v9vOyFyTF3V4fNu-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D2214%253A537%26mode%3Ddesign">Figma con el flujo y prototipo final</a>.</figcaption>
+      </figure>
+      <figure>
+        <img src="../../img/fb/003.png" alt="" width="100%" height="auto">
+        <figcaption>Figura 5: Mockup del historial de Feedback Automático.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="container-fluid pl-4">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Resultados</h2>
+      <p>Los docentes observaron una <b>reducción del ~32% en el tiempo total</b> que pasaban revisando las tareas de una sección (máximo 60 tareas). Además, los estudiantes reportaron un incremento en la cercanía que sienten con los docentes del curso - posiblemente por que los comentarios que reciben son más variados y esto se traduce en mejor percepción de cercanía.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="container-fluid">
+<p>AGV / 2024</p>
+</footer>
