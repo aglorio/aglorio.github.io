@@ -1,0 +1,402 @@
+<html>
+<head>
+<!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../../style/style.css">
+  <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
+  <title>Alessandra Glorio - UTalk</title>
+<!---test color--->
+</head>
+<body>
+<!---navigation bar--->
+<div class="top-bar container-fluid"></div>
+<nav class="nav-bar">
+  <ul class="row justify-content-between align-items-right">
+    <li class="nav_link col-lg-3 col-sm-12">
+      <a class="nav_logo" href="../../index.html">Alessandra Glorio Valdivia</a>
+    </li>
+    <ul class="col-lg-6 col-sm-12 justify-content-end" style="display:inline-flex;">
+          <li class="nav_link">
+            <a href="../ux-ui.html">UX/UI</a>
+          </li>
+          <li class="nav_link active_link">
+            <a href="../producto.html">Producto</a>
+          </li>
+          <li class="nav_link">
+            <a href="../visual.html">Visual</a>
+          </li>
+          <li class="nav_link">
+            <a href="../ops.html">Operaciones</a>
+          </li>
+          <li class="nav_link">
+            <a href="../ilustracion.html">Ilustración</a>
+          </li>
+          <li class="nav_link">
+            <a href="../otros.html">Otros</a>
+          </li>
+    </ul>
+    <ul class="col-lg-1 col-sm-1" style"display:flex;">
+      <li class="nav_link active_link">
+        <a href="#">ESP</a>
+      </li>
+      <li class="nav_link">
+        <a href="../../eng/utalk.html">ENG</a>
+      </li>
+    </ul>
+  </ul>
+</nav>
+
+<!---content--->
+
+<div class="container-fluid pl-4">
+  <div class="row justify-content-start">
+      <div class="col-md-8 mb-3">
+        <h1>UTalk</h1>
+      </div>
+      <section class="col-md-8 mb-2">
+          <p>Debido a las valoraciones de los cursos de Inglés, diseñe un plugin para Canvas que permite que los estudiantes de primer ciclo puedan practicar y recibir feedback sobre su pronunciación del idioma de forma autónoma - sin necesidad de un docente.</p>
+          <h2>El contexto</h2>
+          <p>En el 2021, los cursos virtuales de Inglés de UTP estaban obteniendo un NPS y valoraciones de estudiantes bastante bajos. Estos cursos no habían sido virtualizados desde hace unos años previo a esa fecha, y algunas de las herramientas que se usaban en ellos se habían vuelto obsoletas debido a falta de actualización o pobre compatibilidad con los dispositivos de los estudiantes. Además, al ser cursos remotos asincrónicos - es decir, sin clases con docentes en vivo, tenían problemas típicos de la modalidad como la percepción de falta de cercanía con los docentes y la falta de feedback significativo para aprender.</p>
+          <p>Todo esto nos llevó a la decisión de rediseñar los cursos de inglés por completo - desde la metodología de enseñanza hasta los recursos didácticos. Solo había un problema: los ejercicios de pronunciación.</p>
+          <figure>
+            <img src="../../img/utalk/001a.png" width="40%" height="auto" alt="">
+            <img src="../../img/utalk/001b.png" width="40%" height="auto" alt="">
+            <figcaption>Figura 1: Los ejercicios de pronunciación en el 2019.</figcaption>
+          </figure>
+          <p>En ese momento, los cursos de Inglés ya tenían herramientas integradas para que los alumnos practiquen su pronunciación. Sin embargo, estas usaban software que no estaba diseñado para eso, y comúnmente surgían errores como:</p>
+          <ul class="pl-4">
+            <li>Los ejercicios no siempre reconocen las palabras o sílabas que se usan, causando frustración y baja confianza en la herramienta.</li>
+            <li>No ofrecen feedback útil para mejorar: Cuando da una respuesta equivocada, no explica por qué lo que dices está equivocado.</li>
+            <li>No indican cómo mejorar la pronunciación ni dan un ejemplo inicial de a qué pronunciación apuntar.</li>
+            <li>Los estudiantes dejan de usar los ejercicios progresivamente durante el curso. Después de 3 semanas, el promedio de uso baja en más de 60%. </li>
+            <li>Constantemente propician quejas, comentarios y feedback sobre cómo mejorarlos.</li>
+          </ul>
+          <p>Nos quedaba, entonces, un gran hueco en los cursos que teníamos que repensar. Así que pensamos en cómo funciona realmente la práctica de pronunciación.</p>
+          <p>Inicialmente, intentamos solucionar el problema comprando software externo para integrar en los cursos, pero debido a la calidad masiva de los mismos, quedó claro que esta solución no era sostenible ni escalable para la universidad. Eventualmente, acordamos en diseñar e implementar una solución creada específicamente para cumplir con nuestras necesidades.</p>
+      </section>
+  </div>
+</div>
+<section class="container-fluid mt-2 mb-2  pl-4">
+  <div class="row justify-content-start">
+    <div class="col-md-8">
+        <h2>El usuario</h2>
+          <p>Para complicar un poco las cosas, la población de alumnos de UTP es bastante diversa - y Inglés es un curso obligatorio (para la gran mayoría de estudiantes, que no tienen acreditaciones previas de segundo idioma) que se lleva desde el 1er hasta el 5to ciclo. Pero eso no es todo. UTP como institución prioriza mucho sus cursos y carreras remotas, por lo que una población significativa de sus estudiantes son adultos trabajadores, que deben dividir su tiempo entre su trabajo y sus estudios. Es por eso que dividimos a nuestro público objetivo en dos grandes segmentos:</p>
+        </div>
+      </div>
+</section>
+<section class="w-100 p-5 mb-4 long_container">
+  <div class="row">
+    <div class="col-md-4">
+      <h3>Recién egresados</h3>
+      <ul class="pl-4">
+        <li>17-21 años de edad</li>
+        <li>Primera experiencia con educación superior</li>
+        <li>Inglés pobre</li>
+        <li>Conocimientos digitales mínimos</li>
+        <li>Familiarizados con aplicaciones para smartphone de práctica de idiomas</li>
+        <li>Priorizan carrera</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h3>Adultos que trabajan</h3>
+      <ul class="pl-4">
+        <li>35 años de edad en promedio</li>
+        <li>Segunda o tercera experiencia con educación superior</li>
+        <li>Inglés pobre</li>
+        <li>CConocimientos digitales muy limitados</li>
+        <li>No muy familiarizados con práctica o estudios digitales</li>
+        <li>Priorizan trabajo y/o familia</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="container-fluid mt-2 mb-2 pl-4">
+  <div class="row justify-content-start">
+    <div class="col-md-8">
+          <p>Y si bien ambos usuarios tienen varias necesidades y características que no se alinean, notamos algunas características en común - sobre todo en relación al curso de inglés:</p>
+          <ul class="pl-4">
+            <li>Aprobar cursos y graduarse para mejorar su empleabilidad.</li>
+            <li>Tener información valiosa sobre qué están haciendo mal, qué están haciendo bien y cómo mejorar.</li>
+            <li>Tener ejemplos claros en el curso.</li>
+            <li>Recibir retroalimentación con inmediatez.</li>
+          </ul>
+          <p>Aparte de esto, teníamos otro gran público objetivo al que atender: los docentes. Ellos fueron un aliado importante en la creación de UTalk, y co-crearon gran parte del producto. En 3 sesiones de ideación con ellos, llegamos a obtener 3 principios claves para UTalk - los cuales guiarán su desarrollo:</p>
+          <div class="row justify-content-center" style="row-gap:1em; column-gap:1em;">
+              <div class="col-md-3 col-sm-12 fase-card">
+                <h4>Rapidez</h4>
+                <p style="margin-bottom:8px;">Poder brindar una respuesta y feedback inmediato a la participación del estudiante.</p>
+              </div>
+              <div class="col-md-3 col-sm-12 fase-card">
+                <h4>Calidad</h4>
+                <p style="margin-bottom:8px;">El feedback tiene que brindar información valiosa para que el estudiante pueda ver claramente qué es lo que debe mejorar.</p>
+              </div>
+              <div class="col-md-3 col-sm-12 fase-card">
+                <h4>Oportuno</h4>
+                <p style="margin-bottom:8px;">Tiene que estar disponible 24/7 y adaptarse al momento en el que el estudiante estudie su curso de inglés.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="container-fluid pl-4 mb-2">
+  <div class="row justify-content-start">
+    <div class="col-md-8 mb-2 mt-2">
+        <h2>Los features de UTalk</h2>
+        <p>De los problemas que teníamos con el software usado para los ejercicios de pronunciación, las necesidades de los usuarios que llevan el curso y las exigencias académicas que se tienen en un curso de inglés online, decidimos que UTalk debería tener las siguientes características:</p>
+        <ol class="pl-4">
+          <li>Un espacio de práctica de pronunciación automático.</li>
+          <li>Ejemplos claros de pronunciación correcta.</li>
+          <li>Facilidad para practicar libremente, aun cuando se ha logrado con el estándar esperado</li>
+          <li>Retroalimentación inmediata a la pronunciación de los estudiantes.</li>
+          <li>Facilidades para estudiantes que entienden muy poco inglés, al menos en primer ciclo.</li>
+          <li>Compatibilidad con móvil, web, y diferentes navegadores</li>
+          <li>Una interfaz fácil de usar que congenie con el LMS (Canvas, en ese momento)</li>
+        </ol>
+        <p>Estas características se transformaron en features - elementos específicos que queríamos desarrollar en UTalk:</p>
+        <ol class="pl-4">
+          <li><span style="color:var(--neutral-color);">Un espacio de práctica de pronunciación automático</span> → <b>Zona de práctica</b></li>
+          <li><span style="color:var(--neutral-color);">Ejemplos claros de pronunciación correcta</span> → <b>Ejemplos grabados por docentes y subidos al ejercicio</b></li>
+          <li><span style="color:var(--neutral-color);">Facilidad para practicar libremente, aun cuando se ha logrado con el estándar esperado</span> → <b>Tags de feedback en cada intento</b></li>
+          <li><span style="color:var(--neutral-color);">Retroalimentación inmediata a la pronunciación de los estudiantes</span> → <b>Intentos ilimitados, numerados y evaluados. Indicadores de éxito para estudiantes</b></li>
+          <li><span style="color:var(--neutral-color);">Facilidades para estudiantes que entienden muy poco inglés, al menos en primer ciclo</span> → <b>Traducción de las instrucciones más no de los ejercicios en si</b></li>
+          <li><span style="color:var(--neutral-color);">Compatibilidad con móvil, web, y diferentes navegadores</span> → <b>Auto-explicativo</b></li>
+          <li><span style="color:var(--neutral-color);">Una interfaz fácil de usar que congenie con el LMS (Canvas, en ese momento)</span> → <b>Auto-explicativo</b></li>
+        </ol>
+    </div>
+  </div>
+</section>
+<section class="container-fluid mb-1 pl-4">
+  <div class="row m-0 justify-content-start">
+      <div class="col-xl-8">
+        <h2>Prototipado</h2>
+          <p>A partir de estas funciones, se creó un MVP muy simple para testear la idea y la tecnología con unos pocos alumnos. Este tenia una interfaz simple e integrada dentro del LMS y estaba creada solo como prueba de concepto.
+            <figure style="text-align:center;">
+              <img src="../../img/utalk/002.png" width="100%" height="auto">
+              <figcaption>Figura 2: MVP creado para realizar pruebas de concepto. Solo tenía una oración, ejemplo, una caja de intentos y un botón para grabar.</figcaption>
+            </figure>
+             <p>La prueba con el MVP fue exitosa, y procedí a la creación de interfaces que organicen mejor las funcionalidades propuestas.</p>
+            <figure style="text-align:center;">
+              <img src="../../img/utalk/003.png" width="100%" height="auto" alt="User persona">
+              <figcaption>Figura 3: La interfaz más desarrollada ya tenía espacio para agregar múltiples oraciones en una sola página.</figcaption>
+            </figure>
+        <h3>Pruebas de usuario</h3>
+        <p>Una vez diseñé la primera versión de UTalk, contactamos a 5 estudiantes para realizar pruebas de usuario usando el flujo completo, aun a nivel prototipo.</p>
+      </div>
+  </div>
+</section>
+<section class="long_container pr-4 pl-4 mt-1" style="background:white;">
+  <figure style="text-align:center;">
+    <img src="../../img/utalk/004.png" width="100%" height="auto" alt="User persona">
+    <figcaption>Figura 4: El flujo básico de cómo usar UTalk.</figcaption>
+  </figure>
+</section>
+<section class="container-fluid mb-1 pl-4">
+  <div class="row m-0 justify-content-start">
+      <div class="col-xl-8">
+        <h2>La puesta en marcha</h2>
+          <p>UTalk fue implementado en modalidad de proyecto piloto en el 2022, en 24 secciones de los 4 cursos de Inglés. Aproximadamente 1440 estudiantes usaron la herramienta. Al final del piloto, que duró todo un ciclo académico, enviamos una encuesta y realizamos entrevistas a 20 alumnos sobre la herramienta.</p>
+          <p>Los resultados de encuestas posteriores nos mostraron que la mitad de los que respondieron consideraban que usar nuestra herramienta era muy fácil. Además, un ~70% mencionó que siente que esta herramienta le ayuda muchísimo en su aprendizaje y, comparando nuestra herramienta con el software anterior, el 90% mencionó que UTalk es mucho mejor que la alternativa previa.</p>
+          <h3>Mejoras a utalk</h3>
+          <p>Durante el ciclo, realizamos más pruebas con alumnos y a pesar del éxito inicial de UTalk, quedaban muchas cosas que mejorar. Primero que nada, ajusté la interfaz para hacerla más amigable y fácil de usar. Para ello, tomé referencias de otros programas y aplicaciones para el aprendizaje de segundas lenguas. El resultado fué el siguiente:</p>
+      </div>
+  </div>
+</section>
+<section class="long_container pr-4 pl-4 mt-1" style="background:white;">
+  <figure style="text-align:center;">
+    <img src="../../img/utalk/005.png" width="100%" height="auto" alt="User persona">
+    <figcaption>Figura 5: El flujo mejorado de UTalk.</figcaption>
+  </figure>
+</section>
+<section class="container-fluid pl-4 mb-1 mt-1">
+  <div class="row">
+    <div class="col-md-8">
+      <p>Y, como era una herramienta nueva para los estudiantes, diseñé un proceso de onboarding integrado en la herramienta.</p>
+    </div>
+  </div>
+</section>
+<section class="long_container pr-4 pl-4 mt-1" style="background:white;">
+  <figure style="text-align:center;">
+    <img src="../../img/utalk/006.png" width="100%" height="auto" alt="User persona">
+    <figcaption>Figura 6: Pantallas seleccionadas del Onboarding de UTalk en inglés.</figcaption>
+  </figure>
+</section>
+<section class="container-fluid pl-4 mb-1 mt-1">
+  <div class="row m-0">
+    <div class="col-md-8 m-0">
+      <p>En el 2023, el flujo mejorado de UTalk fue implementado en todas las secciones de Inglés. Hoy se encuentra en vivo y deja que aproximadamente 90,000 estudiantes practiquen su pronunciación cada ciclo.</p>
+    </div>
+  </div>
+</section>
+<section class="container-fluid mb-2 pl-4">
+  <div class="row m-0 justify-content-start">
+      <div class="col-xl-8 m-0">
+        <h2>Iterando con SALTO</h2>
+          <p>Durante el 2023, después de la puesta en marcha inicial, UTalk fue presentado a una aceleradora del grupo Intercorp - SALTO. En ella, buscamos llevar a UTalk a otro nivel.</p>
+          <p>Para esto, empezamos limpiando la casa un poco. Establecimos objetivos y métricas cuantitativas y cualitativas que servirían como indicadores para verificar si nuestras expectativas de UTalk se estaban cumpliendo realmente.</p>
+          <figure style="text-align:center;">
+            <img src="../../img/utalk/007.jpg" width="40%" height="auto" alt="">
+            <img src="../../img/utalk/008.jpg" width="40%" height="auto" alt="">
+            <figcaption>Figuras 7 y 8: El equipo UTalk (Miluska Bellido, yo, Daniel Lopez y Ernesto Cok, de izquierda a derecha) en el Kick Off de Salto. <a href="https://www.linkedin.com/posts/salto-pe_utp-en-salto-activity-7079866119435505664-lg_f?utm_source=share&utm_medium=member_desktop" target="_blank">Extraído de LinkedIn.</a></figcaption>
+          </figure>
+          <p>Además, empezamos a realizar pruebas de usuario mucho más ágiles y condensadas para tener información sobre los estudiantes mucho más rápidamente.</p>
+          <p>Realizamos sesiones de pruebas con usuarios para determinar posibles oportunidades de mejora. Aquí surgieron los siguientes comentarios:</p>
+          <ol class="pl-4">
+            <li>El leer frase tras frase puede resultar monótono, no siempre llegan a la última frase, falta dinamismo</li>
+            <li>El feedback les es muy útil, pero les gustaría tener una idea de su progreso en el tiempo.</li>
+            <li>Se buscan algunas palabras en google para traducirlas y escuchar la pronunciación.</li>
+            <li>No suelen hacer todos los ejercicios disponibles cada semana, la prioridad es el material a revisar, fácilmente pueden olvidar los ejercicios de pronunciación.</li>
+            <li>No dedican el mismo esfuerzo al curso semana tras semana, algunas veces están desmotivados y solo revisan una parte del material.</li>
+          </ol>
+          <p>A partir de estos, creamos algunos conceptos para prototipar rápidamente y para que los estudiantes prioricen según sus necesidades.</p>
+      </div>
+  </div>
+</section>
+<section class="w-100 p-5 mb-4 long_container">
+  <div class="row">
+    <div class="col-md-4 col-xs-12">
+      <h3 >Diálogos UTalk</h3>
+      <p>En vez de tener 8 oraciones separadas, diseñamos una conversación y el estudiante responde a las oraciones predeterminadas hasta terminar un diálogo. Al finalizar, pueden reproducir la conversación y escuchar su voz como parte del diálogo.</p>
+    </div>
+    <div class="col-md-8 col-xs-12">
+      <figure style="text-align:center;">
+        <video style="width:100%;height:auto;margin-bottom:16px;" src="../../img/utalk/009.mp4" autoplay controls>
+        <figcaption>Figura 9: El reproductor en acción.</figcaption>
+      </figure>
+    </div>
+    <div class="col-md-4 col-xs-12">
+      <h3 >Dashboard de progreso</h3>
+      <p>Una página en UTalk puedes dar seguimiento a tu progreso, ver cómo estás mejorando en tu pronunciación a lo largo del tiempo. Dentro de la herramienta puedes encontrar un dashboard con información como el porcentaje promedio  obtenido de tus intentos de pronunciación, la cantidad de intentos y de oraciones practicadas a medida que usas la herramienta, etc.</p>
+    </div>
+    <div class="col-md-8 col-xs-12">
+      <figure style="text-align:center;">
+        <img src="../../img/utalk/010.png" width="100%" height="auto" alt="">
+        <figcaption>Figura 10: El dashboard en baja fidelidad.</figcaption>
+      </figure>
+    </div>
+    <div class="col-md-4 col-xs-12">
+      <h3 >Mensajes Boost</h3>
+      <p>Al ingresar al índice del curso se activará una alerta/anuncio con un sonido que notificará al estudiante que hay uno nuevo set de ejercicios de pronunciación disponible en la semana actual. Dentro de la notificación hay un botón que te lleva directamente a UTalk de esa semana.</p>
+    </div>
+    <div class="col-md-8 col-xs-12">
+      <figure style="text-align:center;">
+        <img src="../../img/utalk/011.png" width="100%" height="auto" alt="">
+        <figcaption>Figura 11: El dashboard en baja fidelidad.</figcaption>
+      </figure>
+    </div>
+    <div class="col-md-4 col-xs-12">
+      <h3 >Medallas</h3>
+      <p>Diseñamos retos y logros específicos para los alumnos, que al completarlos, les otorgan medallas que pueden acumular en su cuenta.</p>
+    </div>
+    <div class="col-md-8 col-xs-12">
+      <figure style="text-align:center;">
+        <img src="../../img/utalk/012.png" width="100%" height="auto" alt="">
+        <figcaption>Figura 12: La pantalla principal de medallas de UTalk.</figcaption>
+      </figure>
+    </div>
+    <div class="col-md-4 col-xs-12">
+      <h3 >Reproductor customizable</h3>
+      <p>Puede retroceder y adelantar el audio, modificar la velocidad de reproducción.</p>
+    </div>
+    <div class="col-md-8 col-xs-12">
+      <figure style="text-align:center;">
+        <video style="width:100%;height:auto;margin-bottom:16px;" src="../../img/utalk/013.mp4" autoplay controls>
+        <figcaption>Figura 13: El reproductor en acción.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="container-fluid mb-1">
+  <div class="row m-0 justify-content-start align-items-center">
+      <div class="col-xl-8">
+        <p>Algunos de estos conceptos fueron testados con prototipos en baja fidelidad, mientras que otros fueron testados simplemente explicando el concepto y escuchando las opiniones de los estudiantes. Los resultados de la priorización hecha por 8 estudiantes fue la siguiente:</p>
+</section>
+<section class="long_container p-4 mt-1" style="background:var(--light-color);">
+  <div class="row justify-content-center" style="margin:0;">
+    <div class="col-md-10">
+      <table class="tg" style"background:white;">
+        <colgroup>
+          <col style="width: 100px">
+          <col style="width: 130px">
+          <col style="width: 130px">
+          <col style="width: 130px">
+          <col style="width: 130px">
+          <col style="width: 130px">
+          <col style="width: 130px">
+          <col style="width: 130px">
+          <col style="width: 130px">
+        </colgroup>
+        <tbody>
+        <tr>
+          <th class="tg-oz0b"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">1era prioridad</span></th>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Reproductor personalizable</span></td>
+          <td class="tg-0pky"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Diálogos</span></td>
+          <td class="tg-0pky"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Reproductor personalizable</span></td>
+          <td class="tg-0pky"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Reproductor personalizable</span></td>
+          <td class="tg-0pky"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Diálogos</span></td>
+          <td class="tg-0pky"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Diálogos</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Diálogos</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Diálogos</span></td>
+        </tr>
+        <tr>
+          <th class="tg-ekg0"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">2da prioridad</span></th>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Mensajes boost</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Medallas</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Medallas</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Dashboard</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Mensajes boost</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Dashboard</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Mensajes boost</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Medallas</span></td>
+        </tr>
+        <tr>
+          <th class="tg-ekg0"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">3ra prioridad</span></th>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Diálogos</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Dashboard</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Diálogos</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Medallas</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Medallas</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Mensajes boost</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Dashboard</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Dashboard</span></td>
+        </tr>
+        <tr>
+          <th class="tg-ekg0"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">4ta prioridad</span></th>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Medallas</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Mensajes boost</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Mensajes boost</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Dialogos</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Reproductor customizable</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Medallas</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Medallas</span></td>
+          <td class="tg-0lax"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Mensajes boost</span></td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section class="container-fluid pl-4">
+  <div class="row m-0">
+    <div class="col-md-8">
+      <p>Debido a estos resultados, prototipé todos los conceptos para testearlos ya como funcionalidades implementadas en UTalk. Quedaba claro que la deseabilidad de diálogos y reproductor customizable era alta, así que nos preparamos para implementar esas funciones de forma prioritaria.</p>
+      <h3>Resultados</h3>
+      <p>La funcionalidad de reproductor customizado fue implementada en UTalk de forma permanente.</p>
+      <figure style="text-align:center;">
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);margin-bottom:16px;" width="100%" height="500" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvKRhmoPgyztLE4hRribeT9%2FUTalk_12-05-2022%3Fpage-id%3D277%253A9938%26type%3Ddesign%26node-id%3D277-9939%26viewport%3D371%252C71%252C0.06%26t%3DpnUOFJZdImAJfx0S-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D277%253A9939%26show-proto-sidebar%3D1%26mode%3Ddesign" allowfullscreen></iframe>
+        <figcaption>Figura 14: <a href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvKRhmoPgyztLE4hRribeT9%2FUTalk_12-05-2022%3Fpage-id%3D277%253A9938%26type%3Ddesign%26node-id%3D277-9939%26viewport%3D371%252C71%252C0.06%26t%3DpnUOFJZdImAJfx0S-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D277%253A9939%26show-proto-sidebar%3D1%26mode%3Ddesign">Prototipo de UTalk</a>, actualizado por última vez en Noviembre de 2023.</figcaption>
+      </figure>
+      <p>La funcionalidad de diálogos se creó como una herramienta alternativa, y se utiliza en solo algunos ejercicios según la metodología de aprendizaje lo requiera.</p>
+      <figure style="text-align:center;">
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);margin-bottom:16px;" width="100%" height="500" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwKiIox78tUZwvndhjK0wmf%2FUTalk---Experimentos%3Fpage-id%3D3%253A268%26type%3Ddesign%26node-id%3D321-6130%26viewport%3D370%252C286%252C0.02%26t%3DI18Rzqm5HWyPYfFR-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D321%253A6130%26show-proto-sidebar%3D1%26mode%3Ddesign" allowfullscreen></iframe>
+        <figcaption>Figura 15: <a href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwKiIox78tUZwvndhjK0wmf%2FUTalk---Experimentos%3Fpage-id%3D3%253A268%26type%3Ddesign%26node-id%3D321-6130%26viewport%3D370%252C286%252C0.02%26t%3DI18Rzqm5HWyPYfFR-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D321%253A6130%26show-proto-sidebar%3D1%26mode%3Ddesign" target:"_blank">Prototipo</a> de diálogos.</figcaption>
+      </figure>
+  </div>
+  </div>
+</section>
+
+<footer class="container-fluid">
+<p>AGV / 2024</p>
+</footer>
+</html>
