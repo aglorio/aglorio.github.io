@@ -22,26 +22,26 @@
             <a href="../ux-ui.html">UX/UI</a>
           </li>
           <li class="nav_link">
-            <a href="../producto.html">Producto</a>
+            <a href="../producto.html">Product</a>
           </li>
           <li class="nav_link">
             <a href="../visual.html">Visual</a>
           </li>
           <li class="nav_link">
-            <a href="../ops.html">Operaciones</a>
+            <a href="../ops.html">Ops</a>
           </li>
           <li class="nav_link">
-            <a href="../ilustracion.html">Ilustración</a>
+            <a href="../ilustracion.html">Illustration</a>
           </li>
           <li class="nav_link">
-            <a href="../otros.html">Otros</a>
+            <a href="../otros.html">Other</a>
           </li>
     </ul>
     <ul class="col-lg-1 col-sm-1" style"display:flex;">
-      <li class="nav_link active_link">
+      <li class="nav_link">
         <a href="#">ESP</a>
       </li>
-      <li class="nav_link">
+      <li class="nav_link active_link">
         <a href="../eng/uxui/feedback.html">ENG</a>
       </li>
     </ul>
@@ -53,22 +53,23 @@
 <section class="container-fluid pl-4">
   <div class="row">
     <div class="col-md-8">
-      <h1>Feedback automático</h1>
-      <p>En UTP, recibí el encargo de crear las interfaces y el flujo de una herramienta diseñada por el equipo de Tecnología para facilitar la corrección de tareas de los docentes de los cursos virtuales. Inicialmente, la página se creó para distribuir con docentes del curso de Inglés, pero debía ser escalable a 100+ cursos eventualmente. La página era temporal - eventualmente las interfaces se transferirían dentro del LMS propio de UTP - UTP+Class.</p>
-      <p>El pedido inicial tenía las siguientes metas:</p>
+      <h1>Assignment feedback generator</h1>
+      <p>At UTP, I was tasked to create the interfaces and workflow for a tool designed by our Technology team to facilitate the review of student assignments by instructors of online courses. This would, ideally, free up time from having to do tedious tasks (reviewing many short/mid length papers and written assignments that often display similar error patterns) and let instructors use this time intofor more high-value tasks, such as 1 on 1 sessions with students or having specific sessions to reinforce topics the class might be struggling with.</p>
+      <p>Initially, the generator was created for ESL teachers to use, but we also wanted it to be scalable to 100+ courses.</p>
+      <p>Despite that pretty massive ask, the initial desired feature list for the generator was fairly simple:</p>
       <ul class="pl-4">
-        <li>Ofrecer un flujo fácil de usar para los docentes (40+ años de edad, sin mucho conocimiento de herramientas web)</li>
-        <li>Permitir generar feedback para múltiples archivos.</li>
-        <li>Permitir visualizar, copiar y descargar el feedback individual para cada archivo inmediatamente.</li>
-        <li>Permitir visualizar, copiar y descargar el feedback generado previamente - individual y masivamente.</li>
-        <li>Diseñar las pantallas de forma que sean eventualmente integrables dentro de UTP+Class.</li>
+        <li>It should be easy to use for instructors (about 40+ years old, without much knowledge of web tools).</li>
+        <li>It should generate feedback for multiple files/assignments at the same time.</li>
+        <li>It should let users view, copy and download individual feedback for each file immediately after its generation.</li>
+        <li>It should allow viewing, copying and downloading previously generated feedback - individually and in bulk.</li>
+        <li>It should have a basic UI so that the basic components can eventually be adapted and integrated into UTP+Class without significant re-design.</li>
       </ul>
       <figure>
         <img src="../../img/fb/001.png" alt="" width="100%" height="auto">
         <img src="../../img/fb/002.png" alt="" width="100%" height="auto">
-        <figcaption>Figuras 1 y 2: Los bocetos que recibí de mi equipo.</figcaption>
+        <figcaption>Figures 1 and 2: Basic drafts for the generator I received from my team.</figcaption>
       </figure>
-      <p>Mi equipo ya tenía un esquema de flujo designado para la herramienta (Figuras 1 y 2) – mi trabajo consistió en traducirlo a interfaces claras.</p>
+      <p>My team had already designed a product flowchart for the generator - my job was to turn it into clean interfaces and suggest extra improvements.</p>
     </div>
   </div>
 </section>
@@ -76,9 +77,9 @@
 <section class="container-fluid pl-4">
   <div class="row">
     <div class="col-md-8">
-      <h2>La Herramienta</h2>
-      <p>La herramienta permite a los docentes universitarios generar feedback escrito para las tareas calificadas de los estudiantes. Esta usa ChatGPT para revisar y crear un texto con feedback para corregir los errores que los estudiantes cometen en el mismo. Solo es aplicable a tareas textuales - y requiere un input en formato .DOCX o .PDF.</p>
-      <p>Una vez que el programa genera feedback, el docente puede copiarlo al portapapeles y pegarlo en la interfaz de revisión de tareas del LMS (que permite agregar comentarios al poner una nota), o descargarlo y enviarlo al estudiante. La herramienta no puede calificar ni poner notas, ni – por el momento – copiar el feedback automáticamente. El docente siempre debe revisar y copiar el texto individualmente para poder entregarlo al alumno.</p>
+      <h2>The feedback generator</h2>
+      <p>In general, it allows course instructors to generate written comments for students' graded assignments. It uses GPT 3.5 to parse the assignment we feed it, and then it writes  a short paragraph of feedback to respond to what the student wrote. This usually contains a supportive or motivational message for the sudent and a list of recommendations to amend the errors the generator detected. It detects errors based on a shortlist of common mistakes we found in the ESL. At the time, error detection was not up to standard and we still relied on instructors to go over the text and add any the generator missed.</p>
+      <p>Once the program generates said feedback, the instructor can copy and paste it into their LMS' assignment review page (which allows comments to be added when entering a grade), or download it and send it to the student directly. Since the platform was a basic PoC on its way to become an MVP, it was not yet (!) directly connected to the LMS, and so this process had to be manual.</p>
     </div>
   </div>
 </section>
@@ -88,7 +89,7 @@
       <figure>
         <video style="width:100%;height:auto;margin-bottom:16px;" src="../../img/fb/004.mp4" autoplay poster="posterimage.jpg" controls>
         </video>
-        <figcaption>Figura 3: Uso de la plataforma para obtener feedback para una tarea.</figcaption>
+        <figcaption>Figure 3: Obtaining feedback for an assignment.</figcaption>
       </figure>
     </div>
   </div>
@@ -96,8 +97,8 @@
 <section class="container-fluid pl-4">
   <div class="row">
     <div class="col-md-8">
-      <h2>Las interfaces</h2>
-      <p>Recibí algunos bocetos de cómo querían que la interfaz se integre dentro del LMS, pero al ser una prueba abierta y fuera del LMS, rediseñé las pantallas para dejar claro que serán diseñadas como un web app - pero las mantuve lo suficientemente simples para poder integrar los componentes principales dentro del LMS. Obviamente, me adapté (en lo posible) al sistema de diseño de +Class.</p>
+      <h2>The UI</h2>
+      <p>I received some sketches of how my team wanted the generator to integrate with the LMS, but as this was a basic PoC that was going to be tested outside the LMS, I redesigned the prototype slightly to make fast development and future integration easier. It was also important to make sure the instructors who used it were aware this was not an official part of their workflow, at least, yet. Also, speed was of the essence, so I skimped on a lot of unnecessary detail and kept the general look pretty barebones.</p>
     </div>
   </div>
 </section>
@@ -106,11 +107,11 @@
     <div class="col-md-10">
       <figure>
         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);margin-bottom:16px;" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLnoUce2GIpWhCSPQGUqW6z%2FAI_Feedback_Mock_Ups_v2%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D2214-422%26viewport%3D146%252C813%252C0.22%26t%3D2v9vOyFyTF3V4fNu-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D2214%253A537%26mode%3Ddesign" allowfullscreen></iframe>
-        <figcaption>Figura 4: Archivo de <a href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLnoUce2GIpWhCSPQGUqW6z%2FAI_Feedback_Mock_Ups_v2%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D2214-422%26viewport%3D146%252C813%252C0.22%26t%3D2v9vOyFyTF3V4fNu-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D2214%253A537%26mode%3Ddesign">Figma con el flujo y prototipo final</a>.</figcaption>
+        <figcaption>Figure 4: Figma file for the <a href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLnoUce2GIpWhCSPQGUqW6z%2FAI_Feedback_Mock_Ups_v2%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D2214-422%26viewport%3D146%252C813%252C0.22%26t%3D2v9vOyFyTF3V4fNu-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D2214%253A537%26mode%3Ddesign">full prototype</a>.</figcaption>
       </figure>
       <figure>
         <img src="../../img/fb/003.png" alt="" width="100%" height="auto">
-        <figcaption>Figura 5: Mockup del historial de Feedback Automático.</figcaption>
+        <figcaption>Figure 5: History screen for previously generated feedback.</figcaption>
       </figure>
     </div>
   </div>
@@ -118,12 +119,14 @@
 <section class="container-fluid pl-4">
   <div class="row">
     <div class="col-md-8">
-      <h2>Resultados</h2>
-      <p>Los docentes observaron una <b>reducción del ~32% en el tiempo total</b> que pasaban revisando las tareas de una sección (máximo 60 tareas). Además, los estudiantes reportaron un incremento en la cercanía que sienten con los docentes del curso - posiblemente por que los comentarios que reciben son más variados y esto se traduce en mejor percepción de cercanía.</p>
+      <h2>Results</h2>
+      <p>After the initial deployment of the feedback generator, ESL instructors observed a ~33% reduction in the total time spent reviewing assignments per class (which has a maximum of 60 students). Since the course load of some instructors can reach up to 5 classes per semester, the generator can offer significant time savings for them. Additionally, students reported an increase in the closeness and trust they felt with the course instructors - possibly because the comments they receive are more personalized. This likely translates into a better perception of their relationship with the professor, though we didn't go into this topic with much depth.
+</p>
+	<p>WRT the scalability to other courses, we managed to make it usable for one humanities course as well. However, we ran into some problems with the results and realized catering to very different courses would probably require a different way of implementation. One that should allow us to control the input prompt with a lot more finesse and, ideally, be able to add other elements to better contextualize or fill in parts of this prompt with course-specific material. This is, in part, how we started work on <a href="#">Gradient</a>.</p>
     </div>
   </div>
 </section>
 
 <footer class="container-fluid">
-<p>AGV / 2024</p>
+<p>AGV / 2025</p>
 </footer>
