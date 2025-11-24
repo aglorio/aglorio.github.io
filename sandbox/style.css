@@ -150,8 +150,8 @@ section{margin-bottom:64px;}
 	color:var(--neutral-color;)
 }
 .active_link{
-	color:var(--primary-color)!important;
 	font-family: var(--semibold);
+	color:var(--primary-color)!important;
 	text-decoration:underline;
 		text-decoration-color:var(--neutral-color);
 }
