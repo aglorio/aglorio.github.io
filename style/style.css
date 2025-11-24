@@ -68,11 +68,13 @@ table {
 body{
 	--primary-color:#0073FF;
 	--secondary-color:#3243DB;
+	/*tertiary and accent can be deleted, neutral and light should bve renamed to grey*/
 	--tertiary-color:#57B8FF;
 	--accent:#F7CB2F;
 	--text-color:#383838;
 	--neutral-color:#808C97;
 	--light-color:#f4f8fc;
+	--grey:#C8D4E4;
 	--neutral-color-light:#d9e5f2;
 	--bold:Graphik-Bold;
 	--semibold:Graphik-Semibold;
@@ -229,6 +231,12 @@ footer{
 footer p{text-align:center;}
 
 /* universal formatting */
+
+.button{
+	padding:8px 32px;
+	border:1px var(--grey) solid;
+	color:var(--primary-color);
+}
 .long_container{
 	background:var(--neutral-color-light);
 	color:var(--text-color);
