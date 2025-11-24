@@ -55,7 +55,7 @@ table {
 
 /*RESET END*/
 
-@import "tailwindcss";
+
 @font-face {font-family:Graphik; src: url('fonts/Graphik-Regular.ttf')}
 @font-face {font-family:Graphik-Bold; src: url('fonts/Graphik-Bold.ttf')}
 @font-face {font-family:Graphik-Bold-Italic; src: url('fonts/Graphik-BoldItalic.ttf')}
@@ -239,7 +239,7 @@ footer p{text-align:center;}
 	border-radius:24px;
 	color:var(--primary-color);
 	text-decoration: none;
-	font-weight: 600;
+	font-weight: ;
 	}
 	.button:hover{
 		border-color:var(--primary-color);
