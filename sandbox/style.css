@@ -1,10 +1,10 @@
-@font-face {font-family:Graphik; src: url('..style/fonts/Graphik-Regular.ttf')}
-@font-face {font-family:Graphik-Bold; src: url('..style/fonts/Graphik-Bold.ttf')}
-@font-face {font-family:Graphik-Bold-Italic; src: url('..style/fonts/Graphik-BoldItalic.ttf')}
-@font-face {font-family:Graphik-Semibold; src: url('..style/fonts/Graphik-Semibold-.otf')}
-@font-face {font-family:Graphik-Black; src: url('..style/fonts/Graphik-Black-.otf')}
-@font-face {font-family:Graphik-Light; src: url('..style/fonts/Graphik-Light-.otf')}
-@font-face {font-family:Graphik-Italic; src: url('..style/fonts/Graphik-RegularItalic.ttf')}
+@font-face {font-family:Graphik; src: url('../style/fonts/Graphik-Regular.ttf')}
+@font-face {font-family:Graphik-Bold; src: url('../style/fonts/Graphik-Bold.ttf')}
+@font-face {font-family:Graphik-Bold-Italic; src: url('../style/fonts/Graphik-BoldItalic.ttf')}
+@font-face {font-family:Graphik-Semibold; src: url('../style/fonts/Graphik-Semibold-.otf')}
+@font-face {font-family:Graphik-Black; src: url('../style/fonts/Graphik-Black-.otf')}
+@font-face {font-family:Graphik-Light; src: url('../style/fonts/Graphik-Light-.otf')}
+@font-face {font-family:Graphik-Italic; src: url('../style/fonts/Graphik-RegularItalic.ttf')}
 
 /*Variables*/
 body{
@@ -43,25 +43,25 @@ h1 {
 	font-family:var(--bold);
 	font-size: 2.4rem;
 	color:var(--primary-color);
-	line-height:1.1em;
+	line-height:2.8em;
 }
 
 h2 {
 	font-family:var(--bold);
 	font-size: 2rem;
 	color:var(--text-color);
-	line-height:1em;
+	line-height:2.3em;
 }
 h3{
 	font-family:var(--semibold);
 	font-size:1.5rem;
 	color:var(--text-color);
-	line-height:0.8em;
+	line-height:1.8em;
 }
 h4{
 	font-family:var(--semibold);
 	font-size:1.2rem;
-   line-height:0.5em;
+   line-height:1.4em;
 }
 h5{
 	font-family:var(--bold);
@@ -72,7 +72,7 @@ h5{
 p{
 	line-height:150%;
 	text-align:left;
-	margin-bottom:1em;
+	margin:0.5em 0;
 	font-size:1rem;
 }
 a{

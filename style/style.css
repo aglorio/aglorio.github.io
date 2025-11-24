@@ -68,7 +68,6 @@ table {
 body{
 	--primary-color:#0073FF;
 	--secondary-color:#3243DB;
-	/*tertiary and accent can be deleted, neutral and light should bve renamed to grey*/
 	--tertiary-color:#57B8FF;
 	--accent:#F7CB2F;
 	--text-color:#383838;
