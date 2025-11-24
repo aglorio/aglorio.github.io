@@ -150,7 +150,7 @@ section{margin-bottom:64px;}
 	color:var(--neutral-color;)
 }
 .active_link{
-	color:var(--primary-color!important);
+	color:var(--primary-color)!important;
 	font-family: var(--semibold);
 	text-decoration:underline;
 		text-decoration-color:var(--neutral-color);
@@ -182,17 +182,19 @@ footer p{text-align:center;}
 	border-radius:24px;
 	color:var(--primary-color);
 	text-decoration: none;
-	font-weight: ;
-	}
+	font-weight:700 ;
+}
+
 	.button:hover{
 		border-color:var(--primary-color);
 	}
+
 	.button:active{
 		border-color:var(--primary-color);
 		background-color:var(--grey);
 	}
 
-	.long_container{
+.long_container{
 	background:var(--neutral-color-light);
 	color:var(--text-color);
 	margin-bottom:16px;
