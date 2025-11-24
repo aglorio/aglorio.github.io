@@ -96,7 +96,7 @@ ul,ol{
    margin-left:2em;
 	font-size:1rem;
 }
-ul li{list-style:"✶";}
+ul li{list-style:"✶ ";}
 ol li{list-style:decimal;}
 hr{
    margin:1em 0;
