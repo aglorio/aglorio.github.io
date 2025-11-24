@@ -4,13 +4,14 @@
  <meta charset="utf-8">
  <link rel="stylesheet" type="text/css" href="style.css">
  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>Alessandra Glorio</title>
 <!---test color--->
 </head>
 <body>
 <!---navigation bar--->
-<div class="top-bar full-w"></div>
+<div class="top-bar w-screen"></div>
 <div class="flex flex-row flex-row-reverse">
   <div class="nav_link active_link"><a href="#">ENG</a></div>
   <div class="nav_link"><a href="#">ESP</a></div>
@@ -19,23 +20,23 @@
 <!---content--->
 
 <section class="flex flex-row">
-  <div class="row container-fluid">
-    <div class="col-lg-4">
+  <div class="w-120">
+    <div>
       <h1>Hello.</h1>
       <p>I'm Alessandra. I design products.</p>
       <p>Besides work, I draw, read, lift weights and watch birds.</p>
       <p>Some choice projects:</p>
-        <div class="container-fluid">
-            <a class="button" href="eng/gradient.html">⁂ Gradient</a>
-            <a class="button" href="eng/utalk.html">✷ Utalk</a>
-            <a class="button" href="eng/wiki.html">◎ Team wiki</a>
-            <a class="button" href="eng/vamo.html">✣ Vamo</a>
+        <div class="flex flex-row space-x-4 space-y-4 flex-wrap justify-center">
+            <a class="button flex-none" href="eng/gradient.html">⁂ Gradient</a>
+            <a class="button flex-none" href="eng/utalk.html">✷ Utalk</a>
+            <a class="button flex-none" href="eng/wiki.html">◎ Team wiki</a>
+            <a class="button flex-none" href="eng/vamo.html">✣ Vamo</a>
         </div>
-      </div>
-      <hr>
-    <div class="col-lg-4">
+    </div>
+      <hr class="mt-4 mb-4">
+    <div class="">
       <p>Other pages:</p>
-        <ul>
+        <ul class="mr-8">
           <li><a href="">Design archive</a></li>
           <li><a href="">Drawings archive</a></li>
           <li><a href="">Writing (soon?)</a></li>
