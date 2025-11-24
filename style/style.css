@@ -152,6 +152,7 @@ ul,ol{
 ul li{list-style: square;}
 ol li{list-style:decimal;}
 footer{
+	
 	text-align: center;
 	position: sticky;
 	bottom:1em;
@@ -235,9 +236,18 @@ footer p{text-align:center;}
 .button{
 	padding:8px 32px;
 	border:1px var(--grey) solid;
+	border-radius:24px;
 	color:var(--primary-color);
-}
-.long_container{
+	}
+	.button:hover{
+		border-color:var(--primary-color);
+	}
+	.button:active{
+		border-color:var(--primary-color);
+		background-color:var(--grey);
+	}
+
+	.long_container{
 	background:var(--neutral-color-light);
 	color:var(--text-color);
 	margin-bottom:16px;
