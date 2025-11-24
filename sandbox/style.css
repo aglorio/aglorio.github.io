@@ -1,4 +1,3 @@
-@import "tailwindcss";
 @font-face {font-family:Graphik; src: url('fonts/Graphik-Regular.ttf')}
 @font-face {font-family:Graphik-Bold; src: url('fonts/Graphik-Bold.ttf')}
 @font-face {font-family:Graphik-Bold-Italic; src: url('fonts/Graphik-BoldItalic.ttf')}
@@ -147,11 +146,11 @@ section{margin-bottom:64px;}
 	font-size: 1rem;
 	text-decoration: none;
 	letter-spacing:2pt;
-	color:var(--neutral-color;)
+	color:var(--neutral-color);
 }
 .active_link{
 	font-family: var(--semibold);
-	color:var(--primary-color)!important;
+	color:var(--primary-color);
 	text-decoration:underline;
 		text-decoration-color:var(--neutral-color);
 }
